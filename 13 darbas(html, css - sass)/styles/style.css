@@ -1,0 +1,810 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 0;
+  background-image: url("../images/background.jpg");
+}
+
+body .clearfix {
+  clear: both;
+  display: block;
+  height: 0;
+}
+
+body .nr1 {
+  font-size: medium;
+  color: #333333;
+  font-style: italic;
+  font-weight: bold;
+  margin: 4% 0 1%;
+  text-align: center;
+}
+
+body .nr2 {
+  font-size: xx-large;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .nr3 {
+  width: 3%;
+  border-top: 2px solid #f38181;
+  margin: 30px auto;
+}
+
+body .nr4 {
+  margin: 0 20% 3%;
+  font-size: small;
+  color: #999999;
+  text-align: center;
+}
+
+section.pirma {
+  background-image: url("../images/erelis.jpg");
+  height: 100vh;
+}
+
+section.pirma header {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 55%;
+}
+
+section.pirma header h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  display: inline-block;
+  color: #ffffff;
+}
+
+section.pirma header a {
+  float: right;
+  padding: 9px 0 0 30px;
+  font-size: medium;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+section.pirma header a:hover {
+  color: #fce38a;
+  padding-bottom: 7px;
+  border-bottom: 3px solid #fce38a;
+}
+
+section.pirma div.welcome {
+  margin: 150px auto;
+  text-align: center;
+}
+
+section.pirma div.welcome h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+section.pirma div.welcome p {
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section.pirma div.welcome hr {
+  width: 3%;
+  border-top: 2px solid #ffffff;
+  margin: 30px auto;
+}
+
+section.pirma div.welcome button {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 7px 17px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+}
+
+section.pirma div.hr {
+  margin: 0 auto;
+  width: 55%;
+}
+
+section.pirma div.hr hr {
+  display: inline-block;
+  width: 21%;
+  margin: 15% 5% 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 2px solid #f7eac4;
+}
+
+section.pirma div.hr hr:nth-child(4) {
+  margin: 0 0 0 0;
+}
+
+section.pirma div.hr p {
+  font-size: medium;
+  color: #f7eac4;
+  margin: 20px 5% 0 0;
+  width: 21%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.pirma div.hr p:nth-child(8) {
+  margin: 20px 0 0 0;
+}
+
+section.antras {
+  text-align: center;
+  height: 100vh;
+  position: relative;
+}
+
+section.antras div.container, section.antras div.containerTwo, section.antras div.containerThree {
+  margin: 50px 15px 0;
+  background-color: #95e1d3;
+  display: inline-block;
+}
+
+section.antras div.container .containerOfContainer, section.antras div.container .containerOfContainerTwo, section.antras div.container .containerOfContainerThree, section.antras div.containerTwo .containerOfContainer, section.antras div.containerTwo .containerOfContainerTwo, section.antras div.containerTwo .containerOfContainerThree, section.antras div.containerThree .containerOfContainer, section.antras div.containerThree .containerOfContainerTwo, section.antras div.containerThree .containerOfContainerThree {
+  background-image: url("../images/Rectangle-6.jpg");
+  margin: 0;
+}
+
+section.antras .container, section.antras .containerTwo, section.antras .containerThree {
+  position: relative;
+}
+
+section.antras .container:hover .containerOfContainer, section.antras .containerTwo:hover .containerOfContainerTwo, section.antras .containerThree:hover .containerOfContainerThree {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translate(-3%, -3%);
+          transform: translate(-3%, -3%);
+}
+
+section.antras .container:hover .image, section.antras .containerTwo:hover .image, section.antras .containerThree:hover .image {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  opacity: 0.2;
+}
+
+section.antras .container:hover .userIcon, section.antras .containerTwo:hover .userIcon, section.antras .containerThree:hover .userIcon {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
+}
+
+section.antras .container:hover p, section.antras .containerTwo:hover p, section.antras .containerThree:hover p {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  font-size: small;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.antras .userIcon, section.antras .userIconTwo, section.antras img.userIconThree {
+  width: 0;
+  height: 0;
+}
+
+section.antras img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.antras div.containerFour {
+  bottom: 0;
+  margin: 200px auto 0;
+  height: 205px;
+  background-color: #95e1d3;
+}
+
+section.antras div.containerFour div {
+  margin: 0 auto;
+  width: 55%;
+  display: inline-block;
+}
+
+section.antras div.containerFour div div:first-child {
+  border-left: 1px solid #ffffff;
+}
+
+section.antras div.containerFour div div {
+  padding: 40px 0 0;
+  width: 20%;
+  height: 206px;
+  border-right: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.antras div.containerFour div div p:first-child {
+  color: #ffffff;
+  font-size: 80px;
+  font-style: initial;
+  padding-bottom: 10px;
+}
+
+section.antras div.containerFour div div p:last-child {
+  color: #ffffff;
+  font-size: small;
+}
+
+section.trecias {
+  text-align: center;
+  height: 50vh;
+}
+
+section.trecias div:first-child p:first-child {
+  font-size: medium;
+  color: #333333;
+  font-style: italic;
+  font-weight: bold;
+  padding: 3% 0 1% 0;
+}
+
+section.trecias div:first-child p:nth-child(2) {
+  font-size: xx-large;
+  color: #333333;
+  font-weight: bold;
+}
+
+section.trecias div:first-child hr {
+  width: 3%;
+  border-top: 2px solid #f38181;
+  margin: 30px auto;
+}
+
+section.trecias div:nth-child(2), section.trecias div:nth-child(4) {
+  margin: 0 auto;
+  width: 55%;
+  text-align: initial;
+}
+
+section.trecias div:nth-child(2) div, section.trecias div:nth-child(4) div {
+  display: inline-block;
+  width: 33%;
+}
+
+section.trecias div:nth-child(2) div p:nth-child(2), section.trecias div:nth-child(4) div p:nth-child(2) {
+  font-size: medium;
+  color: #333333;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+section.trecias div:nth-child(2) div p:nth-child(3), section.trecias div:nth-child(4) div p:nth-child(3) {
+  font-size: small;
+  color: #999999;
+}
+
+section.trecias div:nth-child(2) div img, section.trecias div:nth-child(4) div img {
+  float: left;
+  padding: 0 10% 0 10%;
+  margin: 0 0 50px;
+}
+
+section.trecias hr {
+  margin: 0 auto 2%;
+  width: 55%;
+  border-top: 1px solid #999999;
+}
+
+section.ketvirtas {
+  text-align: center;
+  height: 80vh;
+  background-image: url(../images/Layer_45.jpg);
+  background-size: cover;
+}
+
+section.ketvirtas div:first-child {
+  background-color: rgba(217, 217, 217, 0.5);
+  overflow: hidden;
+  height: 80vh;
+}
+
+section.ketvirtas div:first-child p:first-child {
+  font-size: medium;
+  color: #333333;
+  font-style: italic;
+  font-weight: bold;
+  padding: 5% 0 1% 0;
+}
+
+section.ketvirtas div:first-child p:nth-child(2) {
+  font-size: xx-large;
+  color: #333333;
+  font-weight: bold;
+}
+
+section.ketvirtas div:first-child hr {
+  width: 3%;
+  border-top: 2px solid #f38181;
+  margin: 30px auto;
+}
+
+section.ketvirtas div:first-child img:nth-child(4) {
+  margin-top: 10px;
+  height: 650px;
+  width: 450px;
+}
+
+section.ketvirtas div:nth-child(2) {
+  height: 0;
+}
+
+section.ketvirtas div:nth-child(2) img {
+  height: 480px;
+  width: 300px;
+  -webkit-transform: translate(90%, -80%);
+          transform: translate(90%, -80%);
+}
+
+section.penktas {
+  text-align: center;
+  height: 80vh;
+}
+
+section.penktas div:first-child {
+  margin-top: 50px;
+}
+
+section.penktas div:first-child p:first-child {
+  font-size: medium;
+  color: #333333;
+  font-style: italic;
+  font-weight: bold;
+  padding: 5% 0 1% 0;
+}
+
+section.penktas div:first-child p:nth-child(2) {
+  font-size: xx-large;
+  color: #333333;
+  font-weight: bold;
+}
+
+section.penktas div:first-child hr {
+  width: 3%;
+  border-top: 2px solid #f38181;
+  margin: 30px auto;
+}
+
+section.penktas div:first-child p:nth-child(4) {
+  margin: 0 20% 3%;
+  font-size: small;
+  color: #999999;
+}
+
+section.penktas .second {
+  margin: 0 auto;
+  width: 55%;
+}
+
+section.penktas .second .phwall {
+  width: 45%;
+  float: left;
+  height: 264px;
+}
+
+section.penktas .second div {
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 1%;
+}
+
+section.penktas .second div img:nth-child(1) {
+  float: left;
+  padding: 2%;
+}
+
+section.penktas .second div img:nth-child(3) {
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+  padding-left: 75%;
+}
+
+section.penktas .second div p:nth-child(2) {
+  color: #333333;
+  font-size: medium;
+  text-align: initial;
+  padding: 4% 0 0;
+}
+
+section.penktas .second div p:nth-child(4) {
+  text-align: initial;
+  overflow: auto;
+  width: 100%;
+  height: 90px;
+  border: 1px solid #e5e5e5;
+  font-size: medium;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.penktas .second div:nth-child(4) {
+  margin-bottom: 0;
+}
+
+section.penktas .third {
+  margin-top: 20px;
+  background-color: #d9d9d9;
+  padding: 10px 0;
+}
+
+section.penktas .third div {
+  margin: 0 auto;
+  width: 55%;
+}
+
+section.penktas .third div div {
+  display: inline-block;
+}
+
+section.penktas .third div div:first-child {
+  width: 5%;
+}
+
+section.penktas .third div div:first-child img {
+  padding: 100% 5%;
+}
+
+section.penktas .third div div:nth-child(2) {
+  width: 15%;
+}
+
+section.penktas .third div div:nth-child(2) img {
+  padding: 20px;
+  border: 3px solid #95e1d3;
+}
+
+section.penktas .third div div:nth-child(3) {
+  width: 50%;
+  text-align: initial;
+  padding: 0 3%;
+}
+
+section.penktas .third div div:nth-child(3) p:first-child {
+  padding: 0;
+  color: #999999;
+  font-weight: lighter;
+}
+
+section.penktas .third div div:nth-child(3) hr {
+  display: inline-block;
+  width: 10%;
+}
+
+section.penktas .third div div:nth-child(3) p:nth-child(3) {
+  display: inline-block;
+  font-size: 20px;
+  font-style: italic;
+  color: #333333;
+  padding: 0 0 0 2%;
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
+}
+
+section.penktas .third div div:nth-child(4) {
+  width: 5%;
+}
+
+section.penktas .third div div:nth-child(4) img {
+  padding: 100% 5%;
+}
+
+section.sestas {
+  text-align: center;
+  height: 100vh;
+}
+
+section.sestas div.container, section.sestas div.containerTwo, section.sestas div.containerThree {
+  margin: 50px 15px 0;
+  background-color: #95e1d3;
+  display: inline-block;
+}
+
+section.sestas div.container .containerOfContainer, section.sestas div.container .containerOfContainerTwo, section.sestas div.container .containerOfContainerThree, section.sestas div.containerTwo .containerOfContainer, section.sestas div.containerTwo .containerOfContainerTwo, section.sestas div.containerTwo .containerOfContainerThree, section.sestas div.containerThree .containerOfContainer, section.sestas div.containerThree .containerOfContainerTwo, section.sestas div.containerThree .containerOfContainerThree {
+  background-image: url("../images/Rectangle-6.jpg");
+  margin: 0;
+  background-size: 310px 410px;
+  background-repeat: no-repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+section.sestas div.container .containerOfContainer div, section.sestas div.container .containerOfContainerTwo div, section.sestas div.container .containerOfContainerThree div, section.sestas div.containerTwo .containerOfContainer div, section.sestas div.containerTwo .containerOfContainerTwo div, section.sestas div.containerTwo .containerOfContainerThree div, section.sestas div.containerThree .containerOfContainer div, section.sestas div.containerThree .containerOfContainerTwo div, section.sestas div.containerThree .containerOfContainerThree div {
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  /* float: left; */
+  left: 25%;
+  top: 45%;
+}
+
+section.sestas div.container .containerOfContainer div img, section.sestas div.container .containerOfContainerTwo div img, section.sestas div.container .containerOfContainerThree div img, section.sestas div.containerTwo .containerOfContainer div img, section.sestas div.containerTwo .containerOfContainerTwo div img, section.sestas div.containerTwo .containerOfContainerThree div img, section.sestas div.containerThree .containerOfContainer div img, section.sestas div.containerThree .containerOfContainerTwo div img, section.sestas div.containerThree .containerOfContainerThree div img {
+  width: 0px;
+  height: 0px;
+  padding: 10px 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+section.sestas .container, section.sestas .containerTwo, section.sestas .containerThree {
+  position: relative;
+}
+
+section.sestas .container:hover .containerOfContainer, section.sestas .containerTwo:hover .containerOfContainerTwo, section.sestas .containerThree:hover .containerOfContainerThree {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translate(-3%, -2%);
+          transform: translate(-3%, -2%);
+}
+
+section.sestas .container:hover .containerOfContainer div, section.sestas .containerTwo:hover .containerOfContainerTwo div, section.sestas .containerThree:hover .containerOfContainerThree div {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  position: absolute;
+  /* float: left; */
+  left: 20%;
+  top: 45%;
+  background-color: #fce38a;
+}
+
+section.sestas .container:hover .containerOfContainer div a img, section.sestas .containerTwo:hover .containerOfContainerTwo div a img, section.sestas .containerThree:hover .containerOfContainerThree div a img {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  width: 15px;
+  height: 20px;
+  padding: 10px 15px;
+  border: 1px solid #f38181;
+}
+
+section.sestas .container:hover .containerOfContainer div .pirmas, section.sestas .containerTwo:hover .containerOfContainerTwo div .pirmas, section.sestas .containerThree:hover .containerOfContainerThree div .pirmas {
+  background-color: #f38181;
+}
+
+section.sestas .container:hover .image, section.sestas .containerTwo:hover .image, section.sestas .containerThree:hover .image {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  opacity: 0.2;
+}
+
+section.sestas .image {
+  width: 300px;
+  height: 400px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.sestas .containerFour {
+  margin: 0 auto;
+}
+
+section.sestas .containerFour div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  display: inline-block;
+  width: 300px;
+}
+
+section.sestas .containerFour div p:first-child {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  color: #333333;
+  padding: 30px 0 5px;
+}
+
+section.sestas .containerFour div p:nth-child(2) {
+  font-size: medium;
+  color: #999999;
+  font-style: italic;
+}
+
+section.sestas .containerFour div:nth-child(2) {
+  margin: 0 2%;
+}
+
+section.sestas .containerFive {
+  margin: 90px auto 0;
+  background-color: #f8f8f8;
+}
+
+section.septintas {
+  height: 120vh;
+}
+
+section.septintas div.main div.left, section.septintas div.main div.middleLeft, section.septintas div.main div.middleRight, section.septintas div.main div.right {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+section.septintas div.main div.middleRight img.image {
+  height: 600px;
+}
+
+section.septintas div.container {
+  background-color: #95e1d3;
+  display: inline-block;
+  width: 100%;
+}
+
+section.septintas div.container .containerOfContainer {
+  background-image: url("../images/Rectangle-6.jpg");
+  margin: 0;
+  background-size: auto 1100%;
+  background-repeat: no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+section.septintas div.container .containerOfContainerMeduz {
+  background-image: url("../images/Rectangle-6.jpg");
+  margin: 0;
+  background-size: auto 601px;
+  background-repeat: no-repeat;
+}
+
+section.septintas .container {
+  position: relative;
+}
+
+section.septintas .container:hover .image {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  opacity: 0.2;
+}
+
+section.septintas .container:hover .userIcon {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
+}
+
+section.septintas .container:hover p {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  font-size: small;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.septintas .container:hover p:last-child {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.septintas .userIcon {
+  width: 0;
+  height: 0;
+}
+
+section.septintas img {
+  width: 100%;
+  height: 300px;
+}
+
+section.astuoni {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

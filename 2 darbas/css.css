@@ -1,0 +1,51 @@
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+.citys {
+    background-color:rgb(117, 117, 165);
+    color: white;
+    border-bottom: 2px solid blue;
+}
+.city {
+    width: 120px;
+    height: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+/* .cityOne {
+    width: 200px;
+} */
+td {
+    background-color: rgb(144, 179, 219);
+    height: 40px;
+    padding-left: 10px;
+}
+tr.tableRow td {
+    background-color:rgb(129, 129, 255);
+}
+fieldset {
+    width: 300px;
+}
+.registracija {
+    margin-left: 200px;
+    border-radius: 12px;
+    background-color:green;
+    color: white;
+}
+input.radioMygtukai {
+    width: 100px;
+    margin-left: 50px;
+}
+ul {
+    list-style-image: url('pliusas.png');
+}
+.borderis {
+    border-radius: 12px;
+}
+/* tr:first-child{
+
+} */
+/* tr:nth-child(even){
+
+} */

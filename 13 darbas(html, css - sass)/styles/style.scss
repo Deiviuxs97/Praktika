@@ -1,0 +1,738 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// spalvos
+$balta: #ffffff;
+$pbalta: #f7eac4;
+$paspaustas: #fce38a;
+$juoda: #333333;
+$raudona: #f38181;
+$pilka: #999999;
+$nbackas: #95e1d3;
+$tbackas: #d9d9d9;
+$border: #e5e5e5;
+$mpilkas: #f8f8f8;
+
+// mano kodas
+body {
+	font-size: 0;
+	// background-image: url('../images/background.jpg');
+	background-image: url('../images/background.jpg');
+	// background-size: 100% 100vh;
+	.clearfix {
+		clear: both;
+		display: block;
+		height: 0;
+	}
+
+	// Puslapio pradios tekstas
+	.nr1 {
+		font-size: medium;
+		color: $juoda;
+		font-style: italic;
+		font-weight: bold;
+		// padding: 6% 0 1% 0;
+		margin: 4% 0 1%;
+		text-align: center;
+	}
+	.nr2 {
+		font-size: xx-large;
+		color: $juoda;
+		font-weight: bold;
+		text-align: center;
+	}
+	.nr3 {
+		width: 3%;
+		border-top: 2px solid $raudona;
+		margin: 30px auto;
+	}
+	.nr4 {
+		margin: 0 20% 3%;
+		font-size: small;
+		color: $pilka;
+		text-align: center;
+	}
+}
+
+// Pirmas puslapis
+section.pirma {
+	background-image: url('../images/erelis.jpg');
+	height: 100vh;
+	header {
+		margin: 0 auto;
+		padding-top: 20px;
+		width: 55%;
+		h1 {
+			font-size: xx-large;
+			font-weight: bold;
+			display: inline-block;
+			color: $balta;
+		}
+		a {
+			float: right;
+			padding: 9px 0 0 30px;
+			font-size: medium;
+			text-decoration: none;
+			color: $balta;
+		}
+		a:hover {
+			color: $paspaustas;
+			padding-bottom: 7px;
+			border-bottom: 3px solid $paspaustas;
+			// text-decoration: underline;
+			// text-underline-position: under; //It places the underline under the text with extra space to prevent crossing descenders.
+		}
+	}
+	div.welcome {
+		margin: 150px auto;
+		text-align: center;
+		h1 {
+			color: $balta;
+			font-size: 50px;
+			font-style: italic;
+			margin-bottom: 30px;
+		}
+		p {
+			color: $balta;
+			font-size: 100px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		hr {
+			width: 3%;
+			border-top: 2px solid $balta;
+			margin: 30px auto;
+		}
+		button {
+			background-color: transparent;
+			color: $balta;
+			font-size: 10px;
+			padding: 7px 17px;
+			font-weight: bold;
+			border: 2px solid $balta;
+		}
+	}
+	div.hr {
+		margin: 0 auto;
+		width: 55%;
+		hr {
+			display: inline-block;
+			width: 21%;
+			margin: 15% 5% 0 0;
+			box-sizing: border-box;
+			border-top: 2px solid $pbalta;
+		}
+		hr:nth-child(4) {
+			margin: 0 0 0 0;
+		}
+		p {
+			font-size: medium;
+			color: $pbalta;
+			margin: 20px 5% 0 0;
+			width: 21%;
+			display: inline-block;
+			box-sizing: border-box;
+		}
+		p:nth-child(8) {
+			margin: 20px 0 0 0;
+		}
+		// .hrv:hover ~ .pv {
+		// 	color: $balta;
+		// }
+		// .pv:hover ~ .hrv:nth-child(4){
+		// 	border-top: 2px solid $balta;
+		// }
+		// p:hover, hr:hover {
+		// 	color: $balta;
+		// 	border-top: 2px solid $balta;
+		// }
+		// hr:hover {
+		// 	border-top: 2px solid $balta;
+		// }
+	}
+}
+
+// Antras puslapis
+section.antras {
+	text-align: center;
+	height: 100vh;
+	position: relative;
+
+	//Three photos
+	div.container, div.containerTwo, div.containerThree {
+		margin: 50px 15px 0;
+		background-color: $nbackas;
+		display: inline-block;
+		
+		.containerOfContainer, .containerOfContainerTwo, .containerOfContainerThree {
+			background-image: url('../images/Rectangle-6.jpg');
+			margin: 0;
+		}
+	}
+	.container, .containerTwo, .containerThree {
+		position: relative;
+	}
+	.container:hover .containerOfContainer, .containerTwo:hover .containerOfContainerTwo, .containerThree:hover .containerOfContainerThree {
+		transition-duration: 1s;
+  		transition-delay: 0.1s;
+		transform: translate(-3%, -3%);
+	}
+	.container:hover .image, .containerTwo:hover .image, .containerThree:hover .image {
+		transition-duration: 1s;
+  		transition-delay: 0.1s;
+		opacity: 0.2;
+	}
+	.container:hover .userIcon, .containerTwo:hover .userIcon, .containerThree:hover .userIcon {
+		transition-duration: 0.3s;
+		transition-delay: 0.5s;
+		width: 30px;
+		height: 20px;
+		position: absolute;
+ 		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -90%);
+	}
+	.container:hover p, .containerTwo:hover p, .containerThree:hover p {
+		transition-duration: 0.3s;
+		transition-delay: 0.5s;
+		font-size: small;
+		font-weight: bold;
+		color: $balta;
+		position: absolute;
+ 		top: 55%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	.userIcon, .userIconTwo, img.userIconThree {
+		width: 0;
+		height: 0;
+	}
+	// .image {
+	// 	position: relative;
+	// 	clip: rect(10px, 10px, 10px, 0);
+	// }
+	img {
+		width: 300px;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	// Antro puslapio bottom div'as
+	div.containerFour {
+		bottom: 0;
+		margin: 200px auto 0;
+		height: 205px;
+		background-color: $nbackas;
+		div {
+			margin: 0 auto;
+			width: 55%;
+			display: inline-block;
+			div:first-child{
+				border-left: 1px solid $balta;
+			}
+			div {
+				padding: 40px 0 0;
+				width: 20%;
+				height: 206px;
+				border-right: 1px solid $balta;
+				box-sizing: border-box;
+				p:first-child {
+					color: $balta;
+					font-size: 80px;
+					font-style: initial;
+					padding-bottom: 10px;
+				}
+				p:last-child {
+					color: $balta;
+					font-size: small;
+				}
+			}
+		}
+	}
+}
+
+// Trecias puslapis
+section.trecias {
+	text-align: center;
+	height: 50vh;
+	div:first-child{
+		p:first-child{
+			font-size: medium;
+			color: $juoda;
+			font-style: italic;
+			font-weight: bold;
+			padding: 3% 0 1% 0;
+		}
+		p:nth-child(2) {
+			font-size: xx-large;
+			color: $juoda;
+			font-weight: bold;
+		}
+		hr {
+			width: 3%;
+			border-top: 2px solid $raudona;
+			margin: 30px auto;
+		}
+	}
+	div:nth-child(2), div:nth-child(4){
+		margin: 0 auto;
+		width: 55%;
+		text-align: initial;
+		div {
+			display: inline-block;
+			width: 33%;
+			p:nth-child(2) {
+				font-size: medium;
+				color: $juoda;
+				font-weight: bold;
+				padding-bottom: 5%;
+			}
+			p:nth-child(3) {
+				font-size: small;
+				color: $pilka;
+			}
+			img {
+				float: left;
+				padding: 0 10% 0 10%;
+				margin: 0 0 50px;
+			}
+		}
+	}
+	hr {
+		margin: 0 auto 2%;
+		width: 55%;
+		border-top: 1px solid $pilka;
+	}
+}
+
+// Ketvirtas puslapis
+section.ketvirtas {
+	text-align: center;
+	height: 80vh;
+	background-image: url(../images/Layer_45.jpg);
+	background-size: cover;
+	// div::before {
+	// 	content: "Read this -";
+	// }
+	div:first-child{
+		background-color: rgba($color: $tbackas, $alpha: 0.5);
+		overflow: hidden;
+		height: 80vh;
+		p:first-child{
+			font-size: medium;
+			color: $juoda;
+			font-style: italic;
+			font-weight: bold;
+			padding: 5% 0 1% 0;
+		}
+		p:nth-child(2) {
+			font-size: xx-large;
+			color: $juoda;
+			font-weight: bold;
+		}
+		hr {
+			width: 3%;
+			border-top: 2px solid $raudona;
+			margin: 30px auto;
+		}
+		img:nth-child(4) {
+			margin-top: 10px;
+			height: 650px;
+			width: 450px;
+		}
+	}
+	div:nth-child(2) {
+		height: 0;
+		img {
+			height: 480px;
+			width: 300px;
+			transform: translate(90%, -80%);
+		}
+	}
+}
+
+// Penktas puslapis
+section.penktas {
+	text-align: center;
+	height: 80vh;
+	div:first-child{
+		margin-top: 50px;
+		p:first-child{
+			font-size: medium;
+			color: $juoda;
+			font-style: italic;
+			font-weight: bold;
+			padding: 5% 0 1% 0;
+		}
+		p:nth-child(2) {
+			font-size: xx-large;
+			color: $juoda;
+			font-weight: bold;
+		}
+		hr {
+			width: 3%;
+			border-top: 2px solid $raudona;
+			margin: 30px auto;
+		}
+		p:nth-child(4) {
+			margin: 0 20% 3%;
+			font-size: small;
+			color: $pilka;
+		}
+	}
+
+	.second {
+		margin: 0 auto;
+		width: 55%;
+		
+		.phwall {
+			// margin-right: 5%;
+			width: 45%;
+			float: left;
+			height: 264px;
+		}
+		div {
+			border: 1px solid $border;
+			box-sizing: border-box;
+			width: 50%;
+			display: inline-block;
+			margin-bottom: 1%;
+			img:nth-child(1) {
+				float: left;
+				padding: 2%;
+			}
+			img:nth-child(3) {
+				transform: translateY(-90%);
+				padding-left: 75%;
+			}
+			p:nth-child(2) {
+				color: $juoda;
+				font-size: medium;
+				text-align: initial;
+				padding: 4% 0 0;
+			}
+			p:nth-child(4) {
+				text-align: initial;
+				overflow: auto;
+				width: 100%;
+  				height: 90px;
+				border: 1px solid $border;
+				font-size: medium;
+				box-sizing: border-box;
+			}
+		}
+		div:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
+	
+	.third {
+		margin-top: 20px;
+		background-color: $tbackas;
+		padding: 10px 0;
+
+		div{
+			margin: 0 auto;
+			width: 55%;
+			
+			div {
+				display: inline-block;
+				// box-sizing: border-box;
+			}
+			div:first-child {
+				width: 5%;
+				img{
+					padding: 100% 5%;
+				}
+			}
+			div:nth-child(2) {
+				width: 15%;
+				img{
+					padding: 20px;
+					border: 3px solid $nbackas;
+				}
+			}
+			div:nth-child(3){
+				width: 50%;
+				text-align: initial;
+				padding: 0 3%;
+				p:first-child {
+					padding: 0;
+					color: $pilka;
+					font-weight: lighter;
+				}
+				hr {
+					display: inline-block;
+					width: 10%;
+				}
+				p:nth-child(3){
+					display: inline-block;
+					font-size: 20px;
+					font-style: italic;
+					color: $juoda;
+					padding: 0 0 0 2%;
+					transform: translateY(-130%);
+				}
+			}
+			div:nth-child(4) {
+				width: 5%;
+				img{
+					padding: 100% 5%;
+				}
+			}
+		}
+	}
+}
+
+// Sestas puslapis
+section.sestas {
+	text-align: center;
+	height: 100vh;
+
+	//Three photos of our team
+	div.container, div.containerTwo, div.containerThree {
+		margin: 50px 15px 0;
+		background-color: $nbackas;
+		display: inline-block;
+		
+		.containerOfContainer, .containerOfContainerTwo, .containerOfContainerThree {
+			background-image: url('../images/Rectangle-6.jpg');
+			margin: 0;
+			background-size: 310px 410px;
+			background-repeat: no-repeat;
+			transition: 1s;
+			div {
+				transition: 1s;
+				img{
+					width: 0px;
+					height: 0px;
+					padding: 10px 10px;
+					transition: 1s;
+				}
+				position: absolute;
+				/* float: left; */
+				// margin-left: -100px;
+				left: 25%;
+				top: 45%;
+				// z-index: 1000;
+			}
+		}
+	}
+	.container, .containerTwo, .containerThree {
+		position: relative;
+	}
+	.container:hover .containerOfContainer, .containerTwo:hover .containerOfContainerTwo, .containerThree:hover .containerOfContainerThree {
+		transition-duration: 1s;
+  		transition-delay: 0.1s;
+		transform: translate(-3%, -2%);
+		div {
+			transition-duration: 1s;
+  			transition-delay: 0.1s;
+			a {
+				img {
+					transition-duration: 1s;
+  					transition-delay: 0.1s;
+					width: 15px;
+					height: 20px;
+					padding: 10px 15px;
+					border: 1px solid $raudona;
+				}
+			}
+			.pirmas {
+				background-color: $raudona;
+			}
+			position: absolute;
+			/* float: left; */
+			// margin-left: -100px;
+			left: 20%;
+			top: 45%;
+			// z-index: 1000;
+			background-color: $paspaustas;
+		}
+		
+	}
+	.container:hover .image, .containerTwo:hover .image, .containerThree:hover .image{
+		transition-duration: 1s;
+  		transition-delay: 0.1s;
+		opacity: 0.2;
+	}
+	.image {
+		// position: absolute;
+		// clip: rect(800px,60px,200px,0px);
+		width: 300px;
+		height: 400px;
+		transition: 1s;
+		object-fit: cover;
+	}
+
+	// team names
+	.containerFour {
+		margin: 0 auto;
+		div {
+			box-sizing: border-box;
+			margin: 0 auto;
+			display: inline-block;
+			width: 300px;
+			p:first-child {
+				text-align: center;
+				font-size: medium;
+				font-weight: bold;
+				color: $juoda;
+				padding: 30px 0 5px;
+			}
+			p:nth-child(2) {
+				font-size: medium;
+				color: $pilka;
+				font-style: italic;
+			}
+		}
+		div:nth-child(2){
+			margin: 0 2%;
+		}
+	}
+
+	.containerFive {
+		margin: 90px auto 0;
+		background-color: $mpilkas;
+	}
+}
+
+// Septintas puslapis
+section.septintas {
+	height: 120vh;
+	div.main {
+		div.left, div.middleLeft, div.middleRight, div.right {
+			display: inline-block;
+			width: 25%;
+			vertical-align: top;
+			// height: 200px;
+		}
+		div.middleRight {
+			img.image {
+				height: 600px;
+			}
+		}
+	}
+	//Photos
+	div.container {
+		// margin: 50px 15px 0;
+		background-color: $nbackas;
+		display: inline-block;
+		width: 100%;
+		
+		
+		.containerOfContainer {
+			background-image: url('../images/Rectangle-6.jpg');
+			margin: 0;
+			background-size: auto 1100%;
+			background-repeat: no-repeat;
+			object-fit: fill;
+		}
+		.containerOfContainerMeduz {
+			background-image: url('../images/Rectangle-6.jpg');
+			margin: 0;
+			background-size: auto 601px;
+			background-repeat: no-repeat;
+		}
+	}
+	.container {
+		position: relative;
+	}
+	.container:hover .image {
+		transition-duration: 1s;
+  		transition-delay: 0.1s;
+		opacity: 0.2;
+	}
+	.container:hover .userIcon {
+		transition-duration: 0.3s;
+		transition-delay: 0.5s;
+		width: 30px;
+		height: 30px;
+		position: absolute;
+ 		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -90%);
+	}
+	.container:hover p {
+		transition-duration: 0.3s;
+		transition-delay: 0.5s;
+		font-size: small;
+		font-weight: bold;
+		color: $balta;
+		position: absolute;
+ 		top: 57%;
+		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	.container:hover p:last-child {
+		transition-duration: 0.3s;
+		transition-delay: 0.5s;
+		font-size: small;
+		font-weight: bold;
+		font-style: italic;
+		color: $balta;
+		position: absolute;
+ 		top: 64%;
+		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	.userIcon {
+		width: 0;
+		height: 0;
+	}
+	img {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+section.astuoni {
+	height: 100vh;
+
+}
